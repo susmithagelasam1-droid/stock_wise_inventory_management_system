@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c35">
+  <meta name="description" content="StockWise inventory management — control products, stock, suppliers, purchases and sales from one workspace.">
+  <title>StockWise | Inventory, under control</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="sw-landing">
+  <div class="sw-shell">
+    <nav class="sw-nav" aria-label="Main navigation">
+      <a class="sw-logo" href="/" aria-label="StockWise home">
+        <span class="sw-logo-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 10.2 16 4l11 6.2v12L16 28 5 22.2z"/><path d="m5.5 10.4 10.5 6 10.5-6M16 16.4V27"/><path d="m11 7 11 6.2"/></svg></span>
+        <span><strong>stockwise</strong><small>INVENTORY MANAGEMENT</small></span>
+      </a>
+      <div class="sw-nav-links"><a href="#platform">Platform</a><a href="#workflow">How it works</a><a href="#modules">Modules</a></div>
+      <div class="sw-nav-actions"><a class="sw-text-link" href="/login?role=user">Sign in</a><a class="sw-nav-cta" href="/login?role=admin">Admin portal <span>↗</span></a></div>
+      <button class="sw-menu-toggle" type="button" aria-label="Toggle navigation" onclick="document.body.classList.toggle('sw-menu-open')"><span></span><span></span><span></span></button>
+    </nav>
+
+    <main>
+      <section class="sw-hero" id="platform">
+        <div class="sw-hero-copy">
+          <div class="sw-eyebrow"><span class="sw-live-dot"></span> ONE WORKSPACE. COMPLETE STOCK VISIBILITY.</div>
+          <h1>Inventory,<br><em>under control.</em></h1>
+          <p class="sw-hero-lead">Bring products, purchasing, sales and stock movement together. Make everyday inventory work clearer, faster and more organised.</p>
+          <div class="sw-hero-actions">
+            <a class="sw-primary-btn" href="/login?role=user">Open your workspace <span>→</span></a>
+            <a class="sw-secondary-btn" href="#workflow">Explore the workflow <span>↓</span></a>
+          </div>
+          <div class="sw-trust-line"><span class="sw-check">✓</span> Role-based access <i></i><span class="sw-check">✓</span> Live stock updates <i></i><span class="sw-check">✓</span> Centralised records</div>
+        </div>
+
+        <div class="sw-visual" aria-label="Illustrative StockWise dashboard preview">
+          <div class="sw-orbit sw-orbit-one"></div><div class="sw-orbit sw-orbit-two"></div>
+          <div class="sw-dashboard-card">
+            <div class="sw-dash-top"><div><span class="sw-mini-brand">S</span><strong>Workspace overview</strong></div><span class="sw-period">OVERVIEW <b>⌄</b></span></div>
+            <div class="sw-dash-welcome"><div><small>MONITOR YOUR OPERATIONS</small><h3>Good decisions<br>start with visibility.</h3></div><div class="sw-dash-icon">▦</div></div>
+            <div class="sw-metric-grid">
+              <div class="sw-metric"><span>PRODUCTS</span><strong>01</strong><small>Product catalogue</small></div>
+              <div class="sw-metric"><span>STOCK MOVEMENT</span><strong>↗</strong><small>Purchases &amp; sales</small></div>
+              <div class="sw-metric"><span>PARTNERS</span><strong>02</strong><small>Suppliers &amp; customers</small></div>
+            </div>
+            <div class="sw-dash-bottom"><div><span class="sw-status-dot"></span><strong>Connected workflow</strong><small>One place for your inventory operations</small></div><span class="sw-arrow-circle">↗</span></div>
+          </div>
+          <div class="sw-float-card sw-float-stock"><span class="sw-float-icon">▤</span><div><small>STOCK CONTROL</small><strong>Stay in sync</strong></div><span class="sw-float-check">✓</span></div>
+          <div class="sw-float-card sw-float-flow"><span class="sw-flow-icon">⇄</span><div><small>OPERATIONS</small><strong>Purchase to sale</strong></div></div>
+          <div class="sw-visual-caption">A clearer view of your business, at a glance.</div>
+        </div>
+      </section>
+
+      <section class="sw-proof-strip" aria-label="Platform capabilities">
+        <div><strong>01</strong><span>Centralised<br>product records</span></div><div><strong>02</strong><span>Purchase &amp; sales<br>tracking</span></div><div><strong>03</strong><span>Stock level<br>visibility</span></div><div><strong>04</strong><span>Role-based<br>workspaces</span></div>
+      </section>
+
+      <section class="sw-section sw-workflow" id="workflow">
+        <div class="sw-section-heading"><div><span class="sw-section-kicker">A SIMPLE, CONNECTED FLOW</span><h2>From stock-in<br>to stock-out.</h2></div><p>Keep the essential parts of inventory management connected. Record each activity and make your stock information easier to follow.</p></div>
+        <div class="sw-flow-grid">
+          <article class="sw-flow-card"><span class="sw-step">01 / CATALOGUE</span><div class="sw-line-icon">▦</div><h3>Organise your items</h3><p>Maintain product details, categories, prices and reorder levels in one place.</p><span class="sw-card-foot">PRODUCTS &amp; CATEGORIES <b>↗</b></span></article>
+          <article class="sw-flow-card"><span class="sw-step">02 / PROCUREMENT</span><div class="sw-line-icon">↓</div><h3>Record incoming stock</h3><p>Manage supplier information and purchases while keeping stock quantities updated.</p><span class="sw-card-foot">SUPPLIERS &amp; PURCHASES <b>↗</b></span></article>
+          <article class="sw-flow-card"><span class="sw-step">03 / SALES</span><div class="sw-line-icon">↑</div><h3>Track outgoing stock</h3><p>Record customer sales and keep inventory quantities aligned with transactions.</p><span class="sw-card-foot">CUSTOMERS &amp; SALES <b>↗</b></span></article>
+          <article class="sw-flow-card"><span class="sw-step">04 / INSIGHTS</span><div class="sw-line-icon">⌁</div><h3>Understand your activity</h3><p>Review inventory information and reports to support day-to-day decisions.</p><span class="sw-card-foot">REPORTS &amp; OVERVIEW <b>↗</b></span></article>
+        </div>
+      </section>
+
+      <section class="sw-modules-section" id="modules">
+        <div class="sw-modules-copy"><span class="sw-section-kicker">BUILT AROUND YOUR WORK</span><h2>Everything has<br>its place.</h2><p>Move between the records and operations your team uses every day, without losing sight of the bigger picture.</p><a href="/login?role=user" class="sw-inline-link">Explore the workspace <span>→</span></a></div>
+        <div class="sw-module-list">
+          <div><span class="sw-module-number">01</span><span class="sw-module-symbol">▦</span><strong>Products &amp; categories</strong><small>Keep your catalogue structured</small><b>↗</b></div>
+          <div><span class="sw-module-number">02</span><span class="sw-module-symbol">⌂</span><strong>Suppliers &amp; customers</strong><small>Keep partner details accessible</small><b>↗</b></div>
+          <div><span class="sw-module-number">03</span><span class="sw-module-symbol">⇄</span><strong>Purchases &amp; sales</strong><small>Follow inventory transactions</small><b>↗</b></div>
+          <div><span class="sw-module-number">04</span><span class="sw-module-symbol">▥</span><strong>Reports &amp; insights</strong><small>Review your inventory activity</small><b>↗</b></div>
+        </div>
+      </section>
+
+      <section class="sw-access-section">
+        <div><span class="sw-section-kicker">THE RIGHT ACCESS FOR EVERY ROLE</span><h2>One platform.<br><em>Clear responsibilities.</em></h2><p>Choose the sign-in that matches your account. Permissions are applied by your account role.</p></div>
+        <div class="sw-access-cards"><article><span class="sw-access-icon">⌘</span><h3>Administrator</h3><p>Manage records and oversee inventory operations with administrator access.</p><a href="/login?role=admin">Admin sign in <b>→</b></a></article><article><span class="sw-access-icon">↗</span><h3>Team member</h3><p>Add and view operational records using your assigned user access.</p><a href="/login?role=user">User sign in <b>→</b></a></article></div>
+      </section>
+
+      <section class="sw-final-cta"><div><span class="sw-section-kicker">MAKE EVERY ITEM COUNT</span><h2>Bring your inventory<br>into focus.</h2><p>Sign in to StockWise and get your inventory operations moving.</p></div><a class="sw-primary-btn" href="/login?role=user">Go to StockWise <span>→</span></a></section>
+    </main>
+    <footer class="sw-footer"><a class="sw-logo" href="/"><span class="sw-logo-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 10.2 16 4l11 6.2v12L16 28 5 22.2z"/><path d="m5.5 10.4 10.5 6 10.5-6M16 16.4V27"/></svg></span><span><strong>stockwise</strong><small>INVENTORY MANAGEMENT</small></span></a><span>SMART INVENTORY · SIMPLE CONTROL</span><span>© {{ now_year if now_year is defined else 2026 }} StockWise. All rights reserved.</span></footer>
+  </div>
+</body>
+</html>
