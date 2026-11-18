@@ -1,0 +1,1 @@
+# stock_wise_inventory_management_system
